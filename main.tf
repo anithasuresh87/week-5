@@ -1,19 +1,19 @@
 resource "google_storage_bucket" "bucket" {
-  name     = "test-bucket-ani-project-1234"
+  name     = "test-bucket-anitha-project-1234"
   location = "europe-west2"
 }
 
 resource "google_storage_bucket" "gcs_bucket" {
-  name     = "test-bucket-ani-project-5678"
+  name     = "test-bucket-anitha-project-5678"
   location = "europe-west2"
 }
 
 resource "google_compute_network" "vpc_network" {
-  name = "terraform-ani-network"
+  name = "terraform-anitha-network"
 }
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-ani-instance"
+  name         = "terraform-anitha-instance"
   machine_type = "f1-micro"
 
   boot_disk {
